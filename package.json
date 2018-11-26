@@ -24,6 +24,9 @@
     "env": {
       "node": true
     },
+    "globals": {
+        "axios": false
+    },
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
