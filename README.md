@@ -29,7 +29,7 @@ npm run serve
 ```
 
 ### Initial launch / Access Key
-When openining the app for the first time you should be redirected from the
+When opening the app for the first time you should be redirected from the
 apps homepage to its authentication page, where you will be asked to provide
 your Unsplash **Access Key**. This is to provide the app with the required
 details to perform public actions against the Unsplash API.
@@ -41,7 +41,7 @@ get data from the API, and you are not expected to set any data using the API.
 ## Missing features / Project tasks
 As mentioned your task is to implement some new features into the application
 using whichever methods you deem most suitable. You are encouraged to add any
-additional NPM packages that make this easier / quicker for you. However for
+additional NPM packages that make this easier / quicker for you. However, for
 each package you add, we request you add a note to the bottom of this `README.md`
 file explaining what the package is for, and why you selected it.
 
@@ -63,7 +63,7 @@ and should not require Unsplash user authentication to work.
 #### User Stories
 * As a user I want to be able to mark photos I like.
 * As a user I want to be able to see all the photos I like together in one place.
-* As a user I want to know if I've liked a photo already no mater where I see it.
+* As a user I want to know if I've liked a photo already no matter where I see it.
 * As a user I want to be able to undo marking a photo as liked.
 
 ### Feature 2: Search
