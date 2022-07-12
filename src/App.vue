@@ -1,17 +1,32 @@
 <template>
-    <div id="app">
-        <router-view></router-view>
-    </div>
+  <theme-provider :theme="this.app.theme">
+    <Root></Root>
+  </theme-provider>
 </template>
 
 <script>
-    export default {
-        name: 'app',
+import { ThemeProvider } from "vue-styled-components";
 
-        mounted() {
-            if (!this.$root.client_id) {
-                this.$router.push('/auth')
-            }
-        }
+import { mapGetters } from "vuex";
+
+import Root from "./Root";
+
+export default {
+  name: "app",
+
+  mounted() {
+    if (!this.$root.client_id) {
+      this.$router.push("/auth");
     }
+  },
+
+  components: {
+    "theme-provider": ThemeProvider,
+    Root,
+  },
+
+  computed: {
+    ...mapGetters(["app"]),
+  },
+};
 </script>
